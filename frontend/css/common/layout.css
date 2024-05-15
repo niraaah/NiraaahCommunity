@@ -1,0 +1,58 @@
+@import url('../../components/dialog/dialog.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 calc(50vw - 212.5px);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #232323;
+}
+
+.wrap {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 142px;
+    padding-bottom: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #232323;
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url('/public/background/wave2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; /* 이미지가 화면을 덮으면서 비율을 유지하도록 변경 */
+    background-position: center; /* 이미지를 화면 중앙에 위치 */
+    background-attachment: fixed; /* 스크롤해도 이미지가 고정되도록 설정 */
+}
+
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
