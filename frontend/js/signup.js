@@ -220,10 +220,10 @@ const observeSignupData = () => {
         !passwordCheck
     ) {
         button.disabled = true;
-        button.style.backgroundColor = '#ACA0EB';
+        button.style.backgroundColor = 'rgb(240, 184, 226)';
     } else {
         button.disabled = false;
-        button.style.backgroundColor = '#7F6AEE';
+        button.style.backgroundColor = 'rgb(103, 162, 208)';
     }
 };
 

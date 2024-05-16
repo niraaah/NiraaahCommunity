@@ -150,10 +150,10 @@ export const loginUser = async (request, response) => {
             });
 
         responseData.sessionId = request.sessionID;
-        //console.log(responseData.sessionId)
+
         const requestSessionData = {
             session: mysql.escape(responseData.sessionId),
-            userId: mysql.escape(responseData.user_id),
+            userId: mysql.escape(responseData.userId),
         };
         await userModel.updateUserSession(requestSessionData, response);
 
@@ -372,7 +372,6 @@ export const checkAuth = async (request, response) => {
         console.log(userData);
 
         if (parseInt(userData.userId, 10) !== parseInt(userId, 10))
-            //console.log(`response.status >> ${response.status}`)
             return response.status(401).json({
                 status: 401,
                 message: 'required_authorization',
@@ -406,9 +405,26 @@ export const checkAuth = async (request, response) => {
 export const logoutUser = async (request, response) => {
     try {
 		    // query -> headers
-        const { userId } = request.headers;
+        const userId = request.headers.userid;
+        request.session.destroy(error => {
+            if (error) {
+                console.log(error);
+                return response
+                    .status(500)
+                    .json({
+                        status: 500,
+                        message: 'internal_server_error',
+                        data: null,
+                    });
+            }
 
-        return response.status(204).end();
+            const requestData = {
+                userId,
+            };
+            userModel.destroyUserSession(requestData, response);
+
+            return response.status(204).end();
+        });
     } catch (error) {
         console.log(error);
         return response.status(500).json({

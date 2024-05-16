@@ -23,7 +23,6 @@ const loginClick = async () => {
     const { id: email, password } = loginData;
     const helperTextElement = document.querySelector('.helperText');
 
-    console.log("login.js에서 loginClick 함수의 response >> " + response)
     const response = await userLogin(email, password);
     console.log("login.js에서 loginClick 함수의 response >> " + response)
     if (!response.ok) {
@@ -44,8 +43,9 @@ const loginClick = async () => {
         return;
     }
     updateHelperText(helperTextElement);
-
-    setCookie('session', result.data.auth_token, 14);
+    console.log("login.js에서 loginClick 함수의 auth_token >> " + result.data.sessionId)
+    console.log("login.js에서 loginClick 함수의 userId >> " + result.data.userId)
+    setCookie('session', result.data.sessionId, 14);
     setCookie('userId', result.data.userId, 14);
     location.href = '/html/index.html';
 };
@@ -69,7 +69,7 @@ const observeSignupData = () => {
         password &&
         password.length >= MAX_PASSWORD_LENGTH
     );
-    button.style.backgroundColor = button.disabled ? '#ACA0EB' : '#7F6AEE';
+    button.style.backgroundColor = button.disabled ? 'rgb(240, 184, 226)' : 'rgb(103, 162, 208)';
 };
 
 const eventSet = () => {
@@ -130,7 +130,7 @@ const lottieAnimation = type => {
 const init = async () => {
     await authCheckReverse();
     observeSignupData();
-    prependChild(document.body, Header('커뮤니티', 0));
+    prependChild(document.body, Header('NiraahCommunity', 0));
     eventSet();
     localStorage.clear();
     document.cookie = '';

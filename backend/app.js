@@ -7,7 +7,7 @@ import cors from 'cors';
 const app = express();
 const port = 80;
 
-app.use(cors('*'));
+app.use(cors());
 
 app.use('/public', express.static('public'));
 app.use(express.json());

@@ -49,6 +49,7 @@ export const serverSessionCheck = async () => {
     return data;
 };
 
+
 export const authCheck = async () => {
     const HTTP_OK = 200;
     const session = getCookie('session');
