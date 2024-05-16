@@ -4,7 +4,7 @@ export const getPost = postId => {
     const result = fetch(`${getServerUrl()}/posts/${postId}`, {
         headers: {
             session: getCookie('session'),
-            userid: getCookie('userId'),
+            userId: getCookie('userId'),
         },
         noCORS: true,
     });

@@ -24,7 +24,7 @@ const loginClick = async () => {
     const helperTextElement = document.querySelector('.helperText');
 
     const response = await userLogin(email, password);
-    console.log("login.js에서 loginClick 함수의 response >> " + response)
+    //console.log("login.js에서 loginClick 함수의 response >> " + response)
     if (!response.ok) {
         updateHelperText(
             helperTextElement,
@@ -34,7 +34,7 @@ const loginClick = async () => {
     }
 
     const result = await response.json();
-    console.log("login.js에서 loginClick 함수의 result >> " + result)
+    //console.log("login.js에서 loginClick 함수의 result >> " + result)
     if (result.status !== HTTP_OK) {
         updateHelperText(
             helperTextElement,
@@ -43,8 +43,8 @@ const loginClick = async () => {
         return;
     }
     updateHelperText(helperTextElement);
-    console.log("login.js에서 loginClick 함수의 auth_token >> " + result.data.sessionId)
-    console.log("login.js에서 loginClick 함수의 userId >> " + result.data.userId)
+    //console.log("login.js에서 loginClick 함수의 auth_token >> " + result.data.sessionId)
+    //console.log("login.js에서 loginClick 함수의 userId >> " + result.data.userId)
     setCookie('session', result.data.sessionId, 14);
     setCookie('userId', result.data.userId, 14);
     location.href = '/html/index.html';

@@ -3,7 +3,7 @@ import Header from '../components/header/header.js';
 import { authCheck, getServerUrl, prependChild } from '../utils/function.js';
 import { getPosts } from '../api/indexRequest.js';
 
-const DEFAULT_PROFILE_IMAGE = '../public/image/profile/default.png';
+const DEFAULT_PROFILE_IMAGE = '/public/image/profile/default.jpg';
 const HTTP_NOT_AUTHORIZED = 401;
 const SCROLL_THRESHOLD = 0.9;
 const INITIAL_OFFSET = 5;
@@ -11,6 +11,7 @@ const ITEMS_PER_LOAD = 5;
 
 // getBoardItem 함수
 const getBoardItem = async (offset = 0, limit = 5) => {
+    console.log("BoardItem 불러오는 중...");
     const response = await getPosts(offset, limit);
     if (!response.ok) {
         throw new Error('Failed to load post list.');
@@ -21,6 +22,7 @@ const getBoardItem = async (offset = 0, limit = 5) => {
 };
 
 const setBoardItem = boardData => {
+    
     const boardList = document.querySelector('.boardList');
     if (boardList && boardData) {
         const itemsHtml = boardData
@@ -96,6 +98,5 @@ const init = async () => {
         console.error('Initialization failed:', error);
     }
 };
-
 
 init();

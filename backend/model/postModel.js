@@ -37,7 +37,7 @@ export const getPosts = async (requestData, response) => {
     WHERE post_table.deleted_at IS NULL
     LIMIT ${limit} OFFSET ${offset};
     `;
-    const results = await dbConnect.query(sql, res);
+    const results = await dbConnect.query(sql, response);
 
     if (!results) return null;
     return results;
