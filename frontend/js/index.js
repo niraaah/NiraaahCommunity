@@ -42,7 +42,7 @@ const setBoardItem = boardData => {
         boardList.innerHTML += ` ${itemsHtml}`;
     }
 };
-
+//
 // 스크롤 이벤트 추가
 const addInfinityScrollEvent = () => {
     let offset = INITIAL_OFFSET,
