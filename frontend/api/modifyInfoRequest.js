@@ -6,7 +6,7 @@ export const userModify = async (userId, changeData) => {
         headers: {
             'Content-Type': 'application/json',
             session: getCookie('session'),
-            userid: userId,
+            userId: userId,
         },
         body: JSON.stringify(changeData),
     });
@@ -19,7 +19,7 @@ export const userDelete = async userId => {
         headers: {
             'Content-Type': 'application/json',
             session: getCookie('session'),
-            userid: userId,
+            userId: userId,
         },
     });
     return result;

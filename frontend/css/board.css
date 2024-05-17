@@ -19,11 +19,13 @@
     flex-direction: column;
     row-gap: 8px;
 
+    padding-top: 10px;
     border-bottom: 1px solid #00000029;
     padding-bottom: 16px;
 }
 
 .head .title {
+    font-family: 'Jua', sans-serif;
     font-size: 24px;
     line-height: 31px;
     letter-spacing: -0.02em;
@@ -43,7 +45,7 @@
     padding: 2px 12px;
 
     border-radius: 8px;
-    border: 1px solid #aca0eb;
+    border: 1px solid rgb(240, 184, 226);
     background-color: transparent;
 
     cursor: pointer;
@@ -62,12 +64,14 @@
     object-fit: cover;
 }
 .head .writerWrap .nickname {
+    font-family: 'Jua', sans-serif;
     font-size: 16px;
     line-height: 26px;
     letter-spacing: -0.02em;
     color: rgba(69, 72, 84, 1);
 }
 .head .writerWrap .createdAt {
+    font-family: 'Jua', sans-serif;
     font-size: 12px;
     line-height: 17px;
     letter-spacing: -0.02em;
@@ -89,6 +93,7 @@
 }
 
 .body .content {
+    font-family: 'Jua', sans-serif;
     font-size: 16px;
     line-height: 26px;
     letter-spacing: -0.02em;
@@ -121,6 +126,7 @@
 }
 
 .body .bodyWrap .likeCount {
+    font-family: 'Jua', sans-serif;
     font-size: 18px;
     line-height: 25px;
     letter-spacing: -0.02em;
@@ -157,11 +163,13 @@
 }
 
 .commentWrap h3 {
+    font-family: 'Jua', sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 1.3em;
 }
 .commentWrap p {
+    font-family: 'Jua', sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.56em;
@@ -221,12 +229,13 @@
 .commentInputWrap div button {
     padding: 7px 40px;
     color: rgba(255, 255, 255, 1);
+    font-family: 'Jua', sans-serif;
     font-size: 14px;
     line-height: 16.8px;
     letter-spacing: -0.01em;
     cursor: pointer;
 
-    background-color: #aca0eb;
+    background-color: rgb(240, 184, 226);
     border: none;
     border-radius: 16px;
 }

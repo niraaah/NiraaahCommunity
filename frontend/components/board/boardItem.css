@@ -4,11 +4,11 @@
     width: 100%;
 
     padding: 16px 0;
-    border: 1px solid rgba(241, 241, 243, 1);
-    border-radius: 8px;
+    border: 1px solid rgba(241, 241, 243, 0.3);
+    /*border-radius: 8px;*/
 
     cursor: pointer;
-    box-shadow: 3px 4px 4px 0px #cccccc40;
+    /*box-shadow: 3px 4px 4px 0px #cccccc40;*/
 }
 
 .boardItem .date {
@@ -27,7 +27,7 @@
     font-weight: bold;
     line-height: 32px;
 
-    color: #000000;
+    color: #ffffff;
     letter-spacing: -0.02em;
 
     margin-bottom: 24px;
@@ -41,7 +41,7 @@
     column-gap: 16px;
     padding-bottom: 16px;
     padding-left: 20px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(176, 176, 176);
 }
 
 .boardItem .info h3,
@@ -51,7 +51,7 @@
     line-height: 17px;
     letter-spacing: -0.02em;
 
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .boardItem .writerInfo {
@@ -83,5 +83,5 @@
     line-height: 22px;
     letter-spacing: -0.02em;
 
-    color: rgba(92, 97, 112, 1);
+    color: rgb(150, 176, 145);
 }
