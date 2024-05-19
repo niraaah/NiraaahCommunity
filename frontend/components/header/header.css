@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ssukssuk&display=swap');
 
 header {
     width: 100%;
@@ -12,7 +12,7 @@ header {
 
     /*border-bottom: 3px solid rgb(103, 162, 208);*/
     /*border-radius: 10px;*/
-    background-color: rgb(81, 81, 81, 0.8);
+    background-color: rgb(81, 81, 81, 0.9);
     position: auto;
     top: 0;
     z-index: 99;
@@ -21,11 +21,11 @@ header {
 header h1 {
     grid-area: title;
 
-    font-family: 'Jua', sans-serif;
+    font-family: 'Ssukssuk', sans-serif;
     font-size: 32px;
     line-height: 1.5em;
     letter-spacing: -0.02em;
-    color: #ffffff;
+    color: #b7ff00;
 
     text-align: center;
 

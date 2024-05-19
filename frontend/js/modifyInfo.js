@@ -250,7 +250,7 @@ const init = () => {
             ? `${getServerUrl()}${DEFAULT_PROFILE_IMAGE}`
             : `${getServerUrl()}${authData.data.profileImagePath}`;
 
-    prependChild(document.body, Header('커뮤니티', 2, profileImage));
+    prependChild(document.body, Header('모두의 숲속 이야기', 2, profileImage));
     setData(authData.data);
     observeData();
     addEvent();

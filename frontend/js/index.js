@@ -87,7 +87,7 @@ const init = async () => {
         const fullProfileImagePath = `${getServerUrl()}${profileImagePath}`;
         prependChild(
             document.body,
-            Header('Community', 0, fullProfileImagePath),
+            Header('모두의 숲속 이야기', 0, fullProfileImagePath),
         );
 
         const boardList = await getBoardItem();

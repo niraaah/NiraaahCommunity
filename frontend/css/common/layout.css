@@ -1,5 +1,16 @@
 @import url('../../components/dialog/dialog.css');
-@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ssukssuk&display=swap');
+
+@font-face {
+    font-family: "Ssukssuk";
+    src: url("../../public/fonts/Cafe24Ssukssuk-v2.0.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Ssurround";
+    src: url("../../public/fonts/Cafe24Ssurround-v2.0.ttf") format("truetype");
+    font-weight: normal;
+}
 
 * {
     margin: 0;
@@ -7,7 +18,7 @@
 
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'Jua';
+    font-family: 'Ssukssuk';
 }
 
 body {
@@ -17,7 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 calc(50vw - 212.5px); /*약 290px*/
-    border: 5px solid rgba(255, 255, 255, 0.3);
+    border: 5px solid rgba(140, 255, 0, 0.3);
     background-color: #232323;
     /*overflow: hidden;*/
 }
@@ -30,7 +41,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center-top;
-    background-color: rgba(81, 81, 81, 0.8);
+    background-color: rgba(81, 81, 81, 0.9);
     /*border-radius: 10px;*/
     opacity: 0; /* 초기 투명도 설정 */
     transform: scale(0); /* 초기 크기를 0으로 설정 */
@@ -76,8 +87,8 @@ body {
     bottom: 0;
     /*background: rgba(0, 0, 0, 0.5);*/
 }
-.jua-regular {
-    font-family: "Jua", sans-serif;
+.Ssukssuk-regular {
+    font-family: "Ssukssuk", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
