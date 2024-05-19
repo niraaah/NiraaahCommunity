@@ -6,9 +6,9 @@
     line-height: 38.41px;
     letter-spacing: 0.1em;
     font-weight: 700;
-    color: #353535;
+    color: #ffffff;
     margin-bottom: 67px;
-    font-family: 'Jua', sans-serif;
+    font-family: 'Ssukssuk', sans-serif;
 }
 
 article {
@@ -19,7 +19,7 @@ article {
     align-items: center;
     justify-content: center;
     row-gap: 35px;
-    font-family: 'Jua', sans-serif;
+    font-family: 'Ssukssuk', sans-serif;
 }
 
 .inputBox {
@@ -29,35 +29,36 @@ article {
     width: 100%;
 
     position: relative;
-    font-family: 'Jua', sans-serif;
+    font-family: 'Ssukssuk', sans-serif;
 }
 
 .inputBox label {
     font-size: 15px;
     line-height: 17px;
     letter-spacing: -0.02em;
-    font-weight: 700;
-    color: #000000;
-    font-family: 'Jua', sans-serif;
+    font-weight: 500;
+    padding-left: 15px;
+    color: #ffffff;
+    font-family: 'Ssukssuk', sans-serif;
 }
 .inputBox input {
     font-size: 14px;
-    color: #000000;
+    color: #ffffff;
     line-height: 16.8px;
     width: 100%;
     padding: 8px 10px;
 
-    border: 1px solid #000000;
-    border-radius: 4px;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
 
     background-color: transparent;
-    font-family: 'Jua', sans-serif;
+    font-family: 'Ssukssuk', sans-serif;
 }
 
 .inputBox input[type='text'] {
     flex-grow: 1; /* 입력 필드가 가능한 많은 공간을 차지하도록 함 */
     padding-right: 10px; /* 오른쪽에 Lottie 애니메이션을 위한 공간 확보 */
-    font-family: 'Jua', sans-serif;
+    font-family: 'Ssukssuk', sans-serif;
 }
 .inputBox .lottie {
     position: absolute;
@@ -92,7 +93,7 @@ article {
     flex-direction: column;
     width: 100%;
     margin-top: 42px;
-    font-family: 'Jua', sans-serif;
+    font-family: 'Ssukssuk', sans-serif;
 }
 .buttons p {
     position: absolute;
@@ -103,7 +104,7 @@ article {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    font-family: 'Jua', sans-serif;
+    font-family: 'Ssukssuk', sans-serif;
 }
 .buttons button,
 a {
@@ -117,18 +118,18 @@ a {
 }
 
 .buttons button {
-    background-color: rgba(240, 184, 226);
-    border-radius: 4px;
+    background-color: rgb(110, 160, 0);
+    border-radius: 30px;
     border: none;
 
-    color: #ffffff;
+    color: #000000;
     font-weight: 700;
 }
 
 .buttons a {
-    color: #000000;
+    color: #ffffff;
     font-weight: 400;
-    font-family: 'Jua', sans-serif;
+    font-family: 'Ssukssuk', sans-serif;
 }
 
 .deleteFile {

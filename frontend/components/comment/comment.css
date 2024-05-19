@@ -39,9 +39,9 @@
 .commentInfoWrap div span button {
     padding: 5px 12px;
     border-radius: 8px;
-    border: 1px solid #aca0eb;
+    border: 1px solid rgba(241, 241, 243, 0.3);
     background-color: transparent;
-    color: #000;
+    color: #fbfbfb;
     font-size: 15px;
 }
 

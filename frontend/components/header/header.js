@@ -9,8 +9,8 @@ const headerDropdownMenu = () => {
     const modifyPasswordLink = document.createElement('a');
     const logoutLink = document.createElement('a');
 
-    modifyInfoLink.textContent = '회원정보수정';
-    modifyPasswordLink.textContent = '비밀번호수정';
+    modifyInfoLink.textContent = '회원정보 수정';
+    modifyPasswordLink.textContent = '비밀번호 수정';
     logoutLink.textContent = '로그아웃';
 
     modifyInfoLink.href = '/html/modifyInfo.html';

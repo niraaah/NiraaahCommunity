@@ -69,7 +69,7 @@ const observeSignupData = () => {
         password &&
         password.length >= MAX_PASSWORD_LENGTH
     );
-    button.style.backgroundColor = button.disabled ? 'rgb(240, 184, 226)' : 'rgb(103, 162, 208)';
+    button.style.backgroundColor = button.disabled ? 'rgb(110, 160, 0)' : 'rgb(175, 255, 2)';
 };
 
 const eventSet = () => {
@@ -130,7 +130,7 @@ const lottieAnimation = type => {
 const init = async () => {
     await authCheckReverse();
     observeSignupData();
-    prependChild(document.body, Header('NiraahCommunity', 0));
+    prependChild(document.body, Header('모두의 숲속 이야기', 0));
     eventSet();
     localStorage.clear();
     document.cookie = '';

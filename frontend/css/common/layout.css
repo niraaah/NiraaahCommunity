@@ -1,36 +1,48 @@
 @import url('../../components/dialog/dialog.css');
-@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ssukssuk&display=swap');
+
+@font-face {
+    font-family: "Ssukssuk";
+    src: url("../../public/fonts/Cafe24Ssukssuk-v2.0.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Ssurround";
+    src: url("../../public/fonts/Cafe24Ssurround-v2.0.ttf") format("truetype");
+    font-weight: normal;
+}
 
 * {
     margin: 0;
     padding: 0;
+
     text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Ssukssuk';
 }
 
 body {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-top: 5vh;
     justify-content: center;
     align-items: center;
-    margin: 0 calc(50vw - 212.5px);
-    /*border: 10px solid rgba(255, 255, 255, 0.3);*/
+    margin: 0 calc(50vw - 212.5px); /*약 290px*/
+    border: 5px solid rgba(140, 255, 0, 0.3);
     background-color: #232323;
     /*overflow: hidden;*/
 }
 
 .wrap {
     width: 100%;
-    min-height: 50vh;
-    padding-top: 40px;
+    height: 100%;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    background-color: rgba(255, 248, 230, 0.9);
-    border-radius: 10px;
+    justify-content: center-top;
+    background-color: rgba(81, 81, 81, 0.9);
+    /*border-radius: 10px;*/
     opacity: 0; /* 초기 투명도 설정 */
     transform: scale(0); /* 초기 크기를 0으로 설정 */
     animation: scaleIn 1s forwards; /* 애니메이션이 종료된 후 최종 상태 유지 */
@@ -59,7 +71,7 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    background: url('/public/background/ocean.png');
+    background: url('/public/background/woods.jpg');
     background-repeat: no-repeat;
     background-size: cover; /* 이미지가 화면을 덮으면서 비율을 유지하도록 변경 */
     background-position: center; /* 이미지를 화면 중앙에 위치 */
@@ -75,9 +87,8 @@ body {
     bottom: 0;
     /*background: rgba(0, 0, 0, 0.5);*/
 }
-.jua-regular {
-    font-family: "Jua", sans-serif;
+.Ssukssuk-regular {
+    font-family: "Ssukssuk", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}

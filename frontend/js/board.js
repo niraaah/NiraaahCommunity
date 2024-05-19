@@ -157,10 +157,10 @@ const inputComment = async () => {
     }
     if (textareaElement.value === '') {
         commentBtnElement.disabled = true;
-        commentBtnElement.style.backgroundColor = '#ACA0EB';
+        commentBtnElement.style.backgroundColor = 'rgb(240, 184, 226)';
     } else {
         commentBtnElement.disabled = false;
-        commentBtnElement.style.backgroundColor = '#7F6AEE';
+        commentBtnElement.style.backgroundColor = 'rgb(103, 162, 208)';
     }
 };
 
@@ -189,7 +189,7 @@ const init = async () => {
                 ? `${getServerUrl()}${DEFAULT_PROFILE_IMAGE}`
                 : `${getServerUrl()}${data.data.profileImagePath}`;
 
-        prependChild(document.body, Header('커뮤니티', 2, profileImage));
+        prependChild(document.body, Header('모두의 숲속 이야기', 2, profileImage));
 
         const pageId = getQueryString('id');
 

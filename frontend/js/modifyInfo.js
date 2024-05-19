@@ -65,10 +65,10 @@ const observeData = () => {
         authData.data.profileImagePath !== changeData.profileImagePath
     ) {
         button.disabled = false;
-        button.style.backgroundColor = '#7F6AEE';
+        button.style.backgroundColor = 'rgb(103, 162, 208)';
     } else {
         button.disabled = true;
-        button.style.backgroundColor = '#ACA0EB';
+        button.style.backgroundColor = 'rgb(240, 184, 226)';
     }
 };
 
@@ -93,12 +93,12 @@ const changeEventHandler = async (event, uid) => {
             } else if (authData.data.nickname === value) {
                 helperElement.textContent = '';
                 button.disabled = true;
-                button.style.backgroundColor = '#ACA0EB';
+                button.style.backgroundColor = 'rgb(103, 162, 208))';
                 return;
             } else {
                 helperElement.textContent = '*중복된 닉네임 입니다.';
                 button.disabled = true;
-                button.style.backgroundColor = '#ACA0EB';
+                button.style.backgroundColor = 'rgb(240, 184, 226)';
                 return;
             }
         }
@@ -110,6 +110,7 @@ const changeEventHandler = async (event, uid) => {
     } else if (uid == 'profile') {
         // 사용자가 선택한 파일
         const file = event.target.files[0];
+        console.log(file);
         console.log(changeData.profileImagePath);
         if (!file) {
             localStorage.removeItem('profilePath');
@@ -117,11 +118,12 @@ const changeEventHandler = async (event, uid) => {
             changeData.profileImagePath = null;
         } else {
             const formData = new FormData();
-            formData.append('attachFile', file);
-
+            formData.append('profileImage', file);
+            console.log(formData);
             // 파일 업로드를 위한 POST 요청 실행
             try {
-                const response = await fetch(getServerUrl() + '/upload', {
+                console.log(getServerUrl());
+                const response = await fetch(getServerUrl() + '/users/upload/profile_image', {
                     method: 'POST',
                     body: formData,
                 });
@@ -248,7 +250,7 @@ const init = () => {
             ? `${getServerUrl()}${DEFAULT_PROFILE_IMAGE}`
             : `${getServerUrl()}${authData.data.profileImagePath}`;
 
-    prependChild(document.body, Header('커뮤니티', 2, profileImage));
+    prependChild(document.body, Header('모두의 숲속 이야기', 2, profileImage));
     setData(authData.data);
     observeData();
     addEvent();

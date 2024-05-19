@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 16px;
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
 }
 
 .write {
@@ -26,7 +26,7 @@
     font-weight: 400;
     line-height: 32px;
     letter-spacing: -0.02em;
-    color: rgba(69, 72, 84, 1);
+    color: rgb(255, 255, 255);
     text-align: center;
     width: 100%; /* h2도 중앙 정렬을 유지하도록 설정 */
 }
@@ -36,16 +36,17 @@
     margin-right: 10px;
     padding: 7px 32px;
     border-radius: 18px;
-    background-color: #004466;
+    background-color: rgb(175, 255, 2, 0.8);
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: -0.02em;
-    color: #ffffff;
+    color: #000000;
 }
 
 b {
     font-weight: 700;
+    color: rgb(174, 255, 0);
 }
 
 .write a:hover {
