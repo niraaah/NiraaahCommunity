@@ -7,7 +7,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    row-gap: 16px;
+    row-gap: 1px;
     /*overflow-y: scroll;*/
 }
 
@@ -50,5 +50,24 @@ b {
 }
 
 .write a:hover {
-    background-color: #e4d8bb; /* 여기서 색상을 원하는 색으로 변경하세요 */
+    background-color: rgb(218, 255, 139); /* 여기서 색상을 원하는 색으로 변경하세요 */
+}
+
+/* .sort-options 클래스에 대한 스타일 */
+.sort-options {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sort-options label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.sort-options select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
 }

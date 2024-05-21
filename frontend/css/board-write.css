@@ -5,6 +5,7 @@
     width: 100%;
     padding-left: 16px;
     padding-right: 16px;
+    padding-bottom: 40px;
 
     justify-content: flex-start;
     row-gap: 16px;
@@ -16,7 +17,7 @@ h2 {
     line-height: 31px;
     letter-spacing: -0.02em;
     text-align: center;
-    color: rgba(69, 72, 84, 1);
+    color: rgb(255, 255, 255);
 }
 
 .inputBox {
@@ -31,18 +32,19 @@ h2 {
     line-height: 17px;
     letter-spacing: -0.02em;
     font-weight: 700;
-    color: rgba(69, 72, 84, 1);
-
+    color: #cfff56;
     padding: 16px 16px;
-
     border-bottom: 1px solid #00000029;
 }
+
 .inputBox input {
     width: 100%;
     padding: 16px;
+    color: rgb(255, 255, 255); /* 텍스트 색상 변경 */
     border: none;
-    border-bottom: 1px solid #00000029;
+    border-bottom: 2px solid #ffffff29;
     background-color: transparent;
+    outline: none; /* 포커스 시 외곽선 제거 */
 }
 
 .inputBox textarea {
@@ -50,35 +52,35 @@ h2 {
     padding: 16px;
     height: 200px;
     resize: none;
-    outline: none;
-
+    color: rgb(255, 255, 255); /* 텍스트 색상 변경 */
     border: none;
     border-bottom: 1px solid #00000029;
     background-color: transparent;
+    outline: none; /* 포커스 시 외곽선 제거 */
 }
 
 .wrap button {
     width: 80%;
     height: 33px;
     margin-top: 20px;
-    border-radius: 4px;
+    border-radius: 30px;
     cursor: pointer;
 
-    background-color: #aca0eb;
+    background-color: rgb(110, 160, 0);
 
     font-size: 14px;
     font-weight: 700;
     line-height: 16.8px;
     letter-spacing: -0.02em;
     text-align: center;
-    color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0);
 
     border: none;
 }
 
 .non-border {
     border: none !important;
-    padding: 0 16px !important;
+    padding: 0 1px !important;
 }
 
 .deleteFile {
@@ -93,4 +95,10 @@ h2 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+/* 플레이스홀더 텍스트 색상 변경 */
+.inputBox input::placeholder,
+.inputBox textarea::placeholder {
+    color: rgb(176, 176, 176); /* 플레이스홀더 텍스트 색상 변경 */
 }

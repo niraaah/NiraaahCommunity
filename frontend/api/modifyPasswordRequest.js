@@ -6,7 +6,7 @@ export const changePassword = async (userId, password) => {
         headers: {
             'Content-Type': 'application/json',
             session: getCookie('session'),
-            userid: userId,
+            userId: userId,
         },
         body: JSON.stringify({
             password,
