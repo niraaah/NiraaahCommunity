@@ -1,10 +1,11 @@
 disabled button: rgb(110, 160, 0)
 abled button: rgb(175, 255, 2)
-layout/body & header background: rgba(81, 81, 81, 0.9)
+layout/body & header background: rgb(136, 142, 84, 0.9)
 index/'게시글작성'버튼(a): rgb(175, 255, 2, 0.8)
 index/포인트컬러(b): #729f00
 boardItem/border: rgba(241, 241, 243, 0.3)
 boardItem/info: rgb(176, 176, 176)
-boardItem/writer: rgb(150, 176, 145)
+boardItem/writer: rgb(206, 255, 163)
+boardItem/date: rgb(80, 80, 80)
 
 button/border-radius: 30px

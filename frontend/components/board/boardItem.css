@@ -4,11 +4,29 @@
     width: 100%;
 
     padding: 16px 0;
-    border: 1px solid rgba(241, 241, 243, 0.3);
-    /*border-radius: 8px;*/
-
+    margin-bottom: 20px; /* 아이템 간격을 위한 마진 */
+    border: 0.5px solid rgba(241, 241, 243, 0.3);
+    border-radius: 10px;
+    background-color: rgba(136, 142, 84, 0.9);
+    transform: translateY(-100%); 
+    animation: slideDown 0.5s forwards;
     cursor: pointer;
-    /*box-shadow: 3px 4px 4px 0px #cccccc40;*/
+}
+
+.boardItem:last-child {
+    margin-bottom: 0; /* 마지막 아이템에 대한 마진 제거 */
+}
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0); /* 초기 그림자 설정 */
+    }
+    100% {
+        transform: translateY(0);
+        box-shadow: 
+            -10px 0 10px -5px rgba(0, 0, 0, 0.75), /* 왼쪽 그림자 */
+            10px 0 10px -5px rgba(0, 0, 0, 0.75); /* 오른쪽 그림자 */
+    }
 }
 
 .boardItem .date {
@@ -17,7 +35,7 @@
     font-size: 12px;
     line-height: 17px;
     margin-left: 60px;
-    color: rgba(171, 174, 186, 1);
+    color: rgb(80, 80, 80);
     letter-spacing: -0.02em;
     padding: 0 20px;
 }
@@ -41,7 +59,7 @@
     column-gap: 16px;
     padding-bottom: 16px;
     padding-left: 20px;
-    border-bottom: 1px solid rgb(176, 176, 176);
+    border-bottom: 1px solid rgb(176, 176, 176, 0.5);
 }
 
 .boardItem .info h3,
@@ -83,5 +101,5 @@
     line-height: 22px;
     letter-spacing: -0.02em;
 
-    color: rgb(150, 176, 145);
+    color: rgb(206, 255, 163);
 }

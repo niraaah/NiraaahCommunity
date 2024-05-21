@@ -1,27 +1,36 @@
 <!doctype html>
 <html lang="kr">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="../css/index.css"
-            crossorigin="anonymous"
-        />
-        <title>숲속 이야기</title>
-    </head>
-    <body>
-        <section class="wrap">
-            <div class="write">
-                <h2>
-                    어서오세요! <br />
-                    오늘은 <b>어떤 이야기</b>를 품고 오셨나요?
-                </h2>
-                <a href="./board-write.html" id="writeLink">게시글 작성</a>
-            </div>
-            <section class="boardList"></section>
-        </section>
-        <div class="background"></div>
-    </body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index.css" crossorigin="anonymous" />
+    <title>숲속 이야기</title>
+</head>
+<body>
+    <div class="commentList"></div>
+    <section class="wrap">
+        <div class="write">
+            <h2>
+                어서오세요! <br />
+                오늘은 <b>어떤 이야기</b>를 품고 오셨나요?
+            </h2>
+            <a href="./board-write.html" id="writeLink">게시글 작성</a>
+        </div>
+        <!-- 정렬 옵션을 추가 -->
+        <div class="sort-options">
+            <label for="sort-by">정렬 기준:</label>
+            <select id="sort-by">
+                <option value="dateDesc">Date (Descending)</option>
+                <option value="dateAsc">Date (Ascending)</option>
+                <option value="views">Views</option>
+                <option value="likes">Likes</option>
+            </select>
+        </div>
+    </section>
+    <section>
+        <section class="boardList"></section>
+    </section>
+    <div class="background"></div>
     <script src="../js/index.js" type="module"></script>
+</body>
 </html>

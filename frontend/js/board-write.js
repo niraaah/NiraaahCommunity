@@ -39,10 +39,10 @@ const observeSignupData = () => {
     const { title, content } = boardWrite;
     if (!title || !content || title === '' || content === '') {
         submitButton.disabled = true;
-        submitButton.style.backgroundColor = '#ACA0EB';
+        submitButton.style.backgroundColor = 'rgb(110, 160, 0)';
     } else {
         submitButton.disabled = false;
-        submitButton.style.backgroundColor = '#7F6AEE';
+        submitButton.style.backgroundColor = 'rgb(175, 255, 2)';
     }
 };
 
@@ -143,7 +143,9 @@ const changeEventHandler = async (event, uid) => {
 
         // 파일 업로드를 위한 POST 요청 실행
         try {
+            console.log("파일 업로드 시작");
             const response = await fileUpload(formData);
+            console.log("파일 업로드 완료");
             if (!response.ok) throw new Error('서버 응답 오류');
 
             const result = await response.json(); // 응답을 JSON으로 변환

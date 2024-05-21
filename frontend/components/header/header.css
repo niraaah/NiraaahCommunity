@@ -11,12 +11,17 @@ header {
     padding: 10px 5px;
 
     /*border-bottom: 3px solid rgb(103, 162, 208);*/
-    /*border-radius: 10px;*/
-    background-color: rgb(81, 81, 81, 0.9);
+    border-radius: 30px;
+    background-color: rgba(85, 89, 51, 0.9);
+    box-shadow: 
+            -10px 0 15px -5px rgba(0, 0, 0, 0.75), /* 왼쪽 그림자 */
+            10px 0 15px -5px rgba(0, 0, 0, 0.75); /* 오른쪽 그림자 */
     position: auto;
     top: 0;
     z-index: 99;
+
 }
+
 
 header h1 {
     grid-area: title;
@@ -25,7 +30,7 @@ header h1 {
     font-size: 32px;
     line-height: 1.5em;
     letter-spacing: -0.02em;
-    color: #b7ff00;
+    color: #a0df00;
 
     text-align: center;
 

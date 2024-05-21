@@ -157,10 +157,10 @@ const inputComment = async () => {
     }
     if (textareaElement.value === '') {
         commentBtnElement.disabled = true;
-        commentBtnElement.style.backgroundColor = 'rgb(240, 184, 226)';
+        commentBtnElement.style.backgroundColor = 'rgb(110, 160, 0)';
     } else {
         commentBtnElement.disabled = false;
-        commentBtnElement.style.backgroundColor = 'rgb(103, 162, 208)';
+        commentBtnElement.style.backgroundColor = 'rgb(175, 255, 2)';
     }
 };
 
